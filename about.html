@@ -11,61 +11,53 @@
 </head>
 
 <body class="colorchange">
+<header class="nav-header">
+    <nav id="navigation" class="site-nav">
+        <div class="site-title">
+            <a href="index.html">
+                Roos Horselenberg.
+            </a>
+        </div>
+        <ul id="pages-nav" class="list-pages">
+            <li><a href="about.html">About</a></li>
+            <li><a href="mailto: r.horselenberg@gmail.com">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/roos-horselenberg-5b4187234/">Linkedin</a></li>
+        </ul>
+    </nav>
+</header>
 
+<section class="about">
 
-    <div class="wrap">
-        <header class="site-header cf">
-            <div class="site-title">
-                <a href="index.html">
-                    Roos Horselenberg.
-                </a>
-            </div>
-
-            <nav id="navigation" class="site-nav">
-                <ul id="pages-nav" class="list-pages">
-
-                    <li class=""><a href="about.html">About</a></li>
-                    <li class=""><a href="mailto: r.horselenberg@gmail.com">Contact</a></li>
-                    <li class=""><a href="https://www.linkedin.com/in/roos-horselenberg-5b4187234/">Linkedin</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-
-
-    <section class="about">
-
+    <div>
+        <img src="images/zwartwit.aboutme.jpg" class="illustratie portrait">
         <div>
-            <img src="images/zwartwit.aboutme.jpg" class="illustratie portrait">
-            <div>
-                <p>Hi There! I’m Roos a UI/UX Designer currently studying at the Amsterdam University of
-                    Applied Sciences. As a UI/UX designer, I believe that the user should always be at the center of
-                    the design
-                    process, and I strive to create designs that are not only visually stunning but also functional
-                    and
-                    user-friendly. I am constantly learning and keeping up with the latest trends and technologies
-                    in the field,
-                    and I am excited to see where my passion for design and technology will take me in the future.
-                </p>
-            </div>
-
+            <p>Hi There! I’m Roos a UI/UX Designer currently studying at the Amsterdam University of
+                Applied Sciences. As a UI/UX designer, I believe that the user should always be at the center of
+                the design
+                process, and I strive to create designs that are not only visually stunning but also functional
+                and
+                user-friendly. I am constantly learning and keeping up with the latest trends and technologies
+                in the field,
+                and I am excited to see where my passion for design and technology will take me in the future.
+            </p>
         </div>
 
-
-    </section>
-
-
-    <div class="lets-work-center">
-        <section class="lets-work">
-            <p class="lets-work-text">Let's work together!</p>
-            <div class="hoveremailme">
-                <p class="emailme">Write me a message</p>
-                <a class="emailme" href="mailto: r.horselenberg@gmail.com"> r.horselenberg@gmail.com<img
-                        src="images/pencil.svg" alt="write me an email by clicking this link"></a>
-            </div>
-        </section>
     </div>
+
+
+</section>
+
+
+<div class="lets-work-center">
+    <section class="lets-work">
+        <p class="lets-work-text">Let's work together!</p>
+        <div class="hoveremailme">
+            <p class="emailme">Write me a message</p>
+            <a class="emailme" href="mailto: r.horselenberg@gmail.com"> r.horselenberg@gmail.com<img
+                    src="images/pencil.svg" alt="write me an email by clicking this link"></a>
+        </div>
+    </section>
+</div>
 
 
 <footer>
@@ -73,30 +65,30 @@
     <div class="social-links">
         <ul>
             <li><a href="https://www.linkedin.com/in/roos-horselenberg-5b4187234/"><img src="images/linkedin.svg"
-                        alt="linkedin"></a></li>
+                                                                                        alt="linkedin"></a></li>
             <li><a href="mailto: r.horselenberg@gmail.com"><img src="images/mail.svg" alt="Email"></a></li>
         </ul>
     </div>
 
 </footer>
 
-    <script>
-        function changeBackground() {
-            if (window.scrollY > window.innerHeight / 3) {
-                document.body.classList.add('bg-color');
-            } else {
-                document.body.classList.remove('bg-color');
-            }
-
-            if (window.scrollY > window.innerHeight / 0.30) {
-                document.body.classList.add('bg-color2');
-            } else {
-                document.body.classList.remove('bg-color2');
-            }
+<script>
+    function changeBackground() {
+        if (window.scrollY > window.innerHeight / 3) {
+            document.body.classList.add('bg-color');
+        } else {
+            document.body.classList.remove('bg-color');
         }
 
-        window.addEventListener('scroll', changeBackground);
-    </script>
+        if (window.scrollY > window.innerHeight / 0.30) {
+            document.body.classList.add('bg-color2');
+        } else {
+            document.body.classList.remove('bg-color2');
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground);
+</script>
 
 </body>
 
