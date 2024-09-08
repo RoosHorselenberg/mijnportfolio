@@ -51,17 +51,20 @@ body {
 }
 
 .hero {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    position: relative;
     width: 80%;
     padding: 20px;
     text-align: center;
+    max-width: 1488px;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     /* The image used */
     background-image: url('/images/gradientbackground.png');
 
@@ -190,12 +193,17 @@ footer ul a {
 }
 
 .hero {
-    display: grid;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: left;
 }
 
 .hero .content h1 {
     font-weight: 300;
+    margin: 0;
 }
 
 .scroll {
@@ -290,25 +298,6 @@ section {
     gap: 1.5rem;
 }
 
-@media only screen and (max-width: 600px) {
-    .portfolio {
-        gap: 3rem;
-    }
-
-    .case-info {
-        align-items: flex-start !important;
-        text-align: left !important;
-    }
-
-    .case-title {
-        font-size: 2rem;
-    }
-
-    .case-img img {
-        max-width: 100%;
-    }
-}
-
 .portfolio-container a img {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -375,14 +364,18 @@ a:active {
 }
 
 .nav-header {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+    flex-direction: column;
+    height: 100%;
     gap: 1rem;
+    margin: 0 auto;
+}
+.nav-header .site-nav, .nav-header .hero {
     max-width: 1488px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0 2rem;
 }
 
 .site-title {
@@ -409,9 +402,15 @@ a:active {
 }
 
 .site-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background: transparent;
     font-size: 15px;
     text-align: center;
+    padding: 2rem 2rem !important;
+    z-index: 1;
 }
 
 .site-nav li {
@@ -711,6 +710,37 @@ button:hover .button-text {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .portfolio {
+        gap: 3rem;
+    }
+
+    .circle {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .site-nav {
+        flex-direction: column;
+    }
+    .nav-header .hero {
+        margin-top: -130px !important;
+    }
+
+    .case-info {
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .case-title {
+        font-size: 2rem;
+    }
+
+    .case-img img {
+        max-width: 100%;
+    }
+}
+
 @media only screen and (min-width: 630px) {
     .site-title {
         padding-right: 20px;
@@ -720,7 +750,6 @@ button:hover .button-text {
     .site-nav {
         font-size: 17px;
         text-align: right;
-        margin: .5em 0 0;
         max-width: 40%;
     }
 
