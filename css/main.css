@@ -44,7 +44,9 @@ body {
 
 .wrap,
 .list-pages {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
     z-index: 2;
 }
 
@@ -236,35 +238,42 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 1024px;
+    max-width: 1488px;
 }
+
 .case-img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+
 .case-img img {
     max-width: 75%;
 }
+
 .case.right .case-img {
     align-items: flex-end;
 }
+
 .case-info {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 0.5rem;
 }
+
 .case.right .case-info {
     align-items: flex-start;
     text-align: right;
 }
+
 .case-year {
     color: #393939;
     margin: 0;
     font-size: 1rem;
     font-weight: lighter;
 }
+
 .case-title {
     color: #000000;
     font-size: 3rem;
@@ -272,6 +281,7 @@ section {
     margin: 0;
     font-weight: 500;
 }
+
 .case-cta {
     display: flex;
     flex-direction: row;
@@ -284,13 +294,16 @@ section {
     .portfolio {
         gap: 3rem;
     }
+
     .case-info {
         align-items: flex-start !important;
         text-align: left !important;
     }
+
     .case-title {
         font-size: 2rem;
     }
+
     .case-img img {
         max-width: 100%;
     }
@@ -361,13 +374,23 @@ a:active {
     text-decoration: none
 }
 
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    max-width: 1488px;
+    margin: 0 auto;
+}
+
 .site-title {
     color: #000000;
-    font-size: 22px;
-    line-height: 1.5em;
+    font-size: 1.5rem;
+    line-height: 1.75em;
     position: relative;
     text-align: center;
-    z-index: 12
 }
 
 .site-title a,
@@ -385,31 +408,19 @@ a:active {
     display: inline
 }
 
-.site-header {
-    padding-top: 30px;
-}
-
 .site-nav {
     background: transparent;
     font-size: 15px;
-    margin: 20px 0 30px;
-    text-align: center
+    text-align: center;
 }
 
 .site-nav li {
     display: inline-block;
-    margin-bottom: 20px;
-    margin-left: 25px
-}
-
-.site-nav li:first-child {
-    margin-left: 0
 }
 
 .site-nav a,
 .site-nav a:visited {
     color: #3f3f3f;
-
 }
 
 .site-nav a:hover,
@@ -420,7 +431,6 @@ a:active {
 .featured {
     margin-bottom: -1.5em;
     color: #595959;
-
 }
 
 .portfolio-container {
@@ -702,20 +712,13 @@ button:hover .button-text {
 }
 
 @media only screen and (min-width: 630px) {
-
-    .site-header {
-        padding: 40px 50px 26px
-    }
-
     .site-title {
-        float: left;
         padding-right: 20px;
         text-align: left
     }
 
     .site-nav {
         font-size: 17px;
-        float: right;
         text-align: right;
         margin: .5em 0 0;
         max-width: 40%;
@@ -958,10 +961,6 @@ button:hover .button-text {
         padding: 2em 2em 2em 4em;
     }
 
-    header {
-        padding: 2em 2em 2em 2em;
-    }
-
     section {
         padding: 4em;
     }
@@ -990,11 +989,6 @@ button:hover .button-text {
 }
 
 @media only screen and (min-width: 1250px) {
-
-    header {
-        padding: 2em 2em 2em 2em;
-    }
-
     footer {
         padding: 2em 2em 2em 10em;
     }
@@ -1005,69 +999,6 @@ button:hover .button-text {
 
     main {
         margin: 0px 10% 50px 10%;
-    }
-
-    /*
-    .hero .content {
-      padding: 6em 8em 6em 10em;
-    }
-    */
-}
-
-@media only screen and (min-width: 1550px) {
-    .about > div p {
-        padding-left: 5em;
-    }
-
-    header {
-        padding: 2em 15em 2em 15em;
-    }
-
-    footer {
-        padding: 2em 15em 2em 15em;
-    }
-
-    .portfolio img {
-        float: right;
-        z-index: 0;
-    }
-
-    .hero .content {
-        padding: 9em 5em 6em 5em;
-    }
-
-    .portfolio img {
-        width: 100%;
-    }
-
-    main {
-        margin: 0px 25% 50px 25%;
-    }
-}
-
-@media only screen and (min-width: 2600px) {
-
-    .hero {
-        height: 80vh;
-    }
-
-    .portfolio {
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-
-    .hero .content {
-        padding: 9em 30em 6em 30em;
-    }
-
-    .portfolio img {
-        width: 90%;
-        max-width: 1000px;
-
-    }
-
-    main {
-        margin: 0px 30% 50px 30%;
     }
 }
 
