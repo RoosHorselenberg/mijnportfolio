@@ -25,7 +25,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: "Josefin Sans", sans-serif;
-    color: #000000;
+    color: #26313A;
     background-repeat: repeat;
     transition: all 0.5s ease;
     /* background-image: url('/images/gradientbackground.png');
@@ -58,6 +58,10 @@ body {
     max-width: 1488px;
     overflow: hidden;
     z-index: 2;
+}
+
+.stagger1 {
+   padding: 1rem;
 }
 
 .background-image {
@@ -128,6 +132,7 @@ img {
     color: #ff006f;
     width: 100%;
     height: 100%;
+    font-weight: 400;
     animation: rotateText 10s linear infinite;
 }
 
@@ -283,7 +288,7 @@ section {
 }
 
 .case-title {
-    color: #000000;
+    color: #26313A;
     font-size: 3rem;
     line-height: 1.25;
     margin: 0;
@@ -358,7 +363,7 @@ section .scroll div:nth-child(2) {
 
 a,
 a:visited {
-    color: black;
+    color:#26313A;
     text-decoration: none;
     transition: color 0.1s ease-in-out
 }
@@ -387,7 +392,7 @@ a:active {
 }
 
 .site-title {
-    color: #000000;
+    color: #26313A;
     font-size: 1.5rem;
     line-height: 1.75em;
     position: relative;
@@ -396,12 +401,12 @@ a:active {
 
 .site-title a,
 .site-title a:visited {
-    color: #000000;
+    color: #26313A;
 }
 
 .site-title a:hover,
 .site-title a:active {
-    color: #000000;
+    color: #26313A;
     opacity: .8
 }
 
@@ -427,7 +432,7 @@ a:active {
 
 .site-nav a,
 .site-nav a:visited {
-    color: #3f3f3f;
+    color: #26313A;
 }
 
 .site-nav a:hover,
@@ -437,18 +442,11 @@ a:active {
 
 .featured {
     margin-bottom: -1.5em;
-    color: #595959;
+    color: #26313A;
 }
 
-.portfolio-container {
-    margin-bottom: 5em;
-    width: 100%;
-    transition: width 1s ease-out 100ms
-}
 
-.portfolio-container:hover {
-    width: 102%
-}
+
 
 /*.about-me p {
 text-align: left;
@@ -560,7 +558,7 @@ padding-left: 2em;
 }
 
 .hoveremailme {
-    color: black;
+    color: #26313A;
     transition: all .5s ease-in;
     position: absolute;
     top: 0;
@@ -645,7 +643,7 @@ button.learn-more .circle2 {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #282936;
+    background: #26313A;
     border-radius: 1.625rem;
 }
 
@@ -687,7 +685,7 @@ button.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: #282936;
+    color: #26313A;
     font-weight: 400;
     line-height: 1.6;
     text-align: center;
@@ -767,6 +765,11 @@ button:hover .button-text {
 
     .case-img img {
         max-width: 100%;
+    }
+
+
+    .next-case {
+        flex-direction: column;
     }
 }
 

@@ -29,7 +29,7 @@
     <div class="hero">
         <div class="content">
             <h1 class="stagger1">
-                Hi There! I’m Roos a UI/UX Designer currently currently working at Albert Heijn GenAI Labs.
+                Hi There! I’m Roos a UI/UX Designer currently working at Albert Heijn GenAI Labs, but actively looking for a fulltime job.
             </h1>
         </div>
 
@@ -45,12 +45,12 @@
 
 <section class="portfolio">
     <div class="case transition1">
-        <a class="case-img" href="cmdmethods.html">
-            <img src="images/cmdmethodcards.png" alt="CMD Method Cards link to case study">
+        <a class="case-img" href="mijngezondeprofiel.html">
+            <img src="images/mijn.gezonde.profiel.png" alt="CMD Method Cards link to case study">
         </a>
 
-        <a class="case-info" href="cmdmethods.html">
-            <p class="case-year">2022</p>
+        <a class="case-info" href="mijngezondeprofiel.html">
+            <p class="case-year">2024</p>
             <p class="case-title">Mijn gezonde profiel</p>
             <button class="case-cta" type="button">
                 <span>View project</span>
@@ -66,12 +66,12 @@
     </div>
 
     <div class="case right transition2">
-        <a class="case-img" href="cmdmethods.html">
-            <img src="images/cmdmethodcards.png" alt="CMD Method Cards link to case study">
+        <a class="case-img" href="productvergelijker.html">
+            <img src="images/productvergelijker.png" alt="productvergelijker link to case study">
         </a>
 
-        <a class="case-info" href="cmdmethods.html">
-            <p class="case-year">2024</p>
+        <a class="case-info" href="productvergelijker.html">
+            <p class="case-year">2023</p>
             <p class="case-title">De productvergelijker</p>
             <button class="case-cta" type="button">
                 <span>View project</span>
@@ -149,6 +149,8 @@
         </a>
     </div>
 
+
+    <!--
     <div class="case right transition6">
         <a class="case-img" href="honeyandhive.html">
             <img src="images/honeyandhive.png" alt="Honey and Hive link to case study">
@@ -169,6 +171,7 @@
             </button>
         </a>
     </div>
+    -->
 </section>
 
 
@@ -291,6 +294,17 @@
     gsap.from(".transition4", {
         scrollTrigger: {
             trigger: '.transition4',
+            start: "top center"
+        },
+        y: 50,
+        opacity: .2,
+        duration: 1,
+        stagger: .7
+    })
+
+    gsap.from(".transition5", {
+        scrollTrigger: {
+            trigger: '.transition5',
             start: "top center"
         },
         y: 50,
