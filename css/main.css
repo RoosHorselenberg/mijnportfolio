@@ -255,7 +255,7 @@ section {
     transition: transform 0.5s ease-in-out;
 }
 .case:hover {
-    transform: scale(1.05) !important;
+    transform: scale(1.03) !important;
 }
 
 .case-img {
