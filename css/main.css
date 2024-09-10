@@ -61,7 +61,7 @@ body {
 }
 
 .stagger1 {
-   padding: 1rem;
+    padding: 1rem;
 }
 
 .background-image {
@@ -302,9 +302,11 @@ section {
     justify-content: center;
     gap: 1.5rem;
 }
+
 .case-cta {
     transition: transform 0.3s ease-in-out;
 }
+
 .case-cta:hover {
     transform: translateX(0.5rem);
 }
@@ -363,7 +365,7 @@ section .scroll div:nth-child(2) {
 
 a,
 a:visited {
-    color:#26313A;
+    color: #26313A;
     text-decoration: none;
     transition: color 0.1s ease-in-out
 }
@@ -381,9 +383,11 @@ a:active {
     gap: 1rem;
     margin: 0 auto;
 }
+
 .nav-header.full-height {
     height: 100%;
 }
+
 .nav-header .site-nav, .nav-header .hero {
     max-width: 1488px;
     margin: 0 auto;
@@ -444,8 +448,6 @@ a:active {
     margin-bottom: -1.5em;
     color: #26313A;
 }
-
-
 
 
 /*.about-me p {
@@ -538,13 +540,14 @@ padding-left: 2em;
     justify-content: center;
     align-items: center;
     font-weight: 700;
+    font-size: 3rem;
     color: #c5bacb;
     padding: 0;
 }
 
 .lets-work-text {
     text-align: left;
-    display: none;
+    margin-bottom: 0;
 }
 
 .emailme {
@@ -560,9 +563,6 @@ padding-left: 2em;
 .hoveremailme {
     color: #26313A;
     transition: all .5s ease-in;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -732,11 +732,9 @@ button:hover .button-text {
     .portfolio {
         gap: 3rem;
     }
+
     .about {
         padding: 2rem;
-    }
-    .lets-work-center {
-        display: none;
     }
 
     .circle {
@@ -747,6 +745,7 @@ button:hover .button-text {
     .site-nav {
         flex-direction: column;
     }
+
     .nav-header .hero {
         margin-top: -130px !important;
     }
@@ -759,6 +758,7 @@ button:hover .button-text {
     .case {
         padding: 0 2rem;
     }
+
     .case-title {
         font-size: 2rem;
     }
@@ -959,6 +959,12 @@ button:hover .button-text {
     padding: 10px;
 }
 
+@media only screen and (min-width: 750px) {
+    .lets-work-text {
+        font-size: 5rem;
+    }
+}
+
 @media only screen and (min-width: 801px) {
 
     .portfolio {
@@ -1003,7 +1009,7 @@ button:hover .button-text {
 
     .lets-work-text {
         text-align: left;
-        font-size: 10em;
+        font-size: 6.5rem;
         display: unset;
         line-height: 1.2em;
     }
@@ -1041,4 +1047,9 @@ button:hover .button-text {
     }
 }
 
+@media only screen and (min-width: 1500px) {
+    .lets-work-text {
+        font-size: 10rem;
+    }
+}
 /*# sourceMappingURL=main.css.map */
